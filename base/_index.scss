@@ -2,3 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
+
+ul, ol {
+  // list-style-position: inside;
+	padding-left: 1rem;
+}
+
+li{
+	text-indent: -5px;
+}
