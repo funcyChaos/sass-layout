@@ -10,10 +10,19 @@
 	grid-template-rows: 60px auto 100px;
 	gap: 1rem;
 	grid-template-areas:
-		"sidebar header header"
-		"sidebar content content"
-		"footer footer footer"
+		"sidebar header ."
+		"sidebar content ."
+		"footer footer ."
 	;
+	@media(max-width: $large-phone){
+		grid-template-rows: 60px auto auto 100px;
+		grid-template-areas: 
+			"header header header"
+			"content content content"
+			"sidebar sidebar sidebar"
+			"footer footer footer"
+		;
+	}
 
 	background-color: $background;
 	color: $font;
@@ -30,6 +39,12 @@
 
 		img{
 			width: 90%;
+		}
+		@media(max-width: $large-phone){
+			// flex-direction: row;
+			// justify-content: space-between;
+			// align-items: center;
+			img{width: 150px;}
 		}
 		.categories{
 			margin: 0 10px;

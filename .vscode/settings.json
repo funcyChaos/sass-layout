@@ -5,5 +5,9 @@
       "cmd": "sass ./style.scss ./style.css",
       "silent": true
     }]
-  }
+  },
+	"files.associations": {
+    "*.html": "html"
+	}
+
 }
